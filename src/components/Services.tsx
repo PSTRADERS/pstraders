@@ -1,23 +1,24 @@
 const services = [
   {
     n: "01",
-    title: "Rent-to-HMO & Guaranteed Rent",
-    body: "Convert your property into a licensed HMO and enjoy guaranteed monthly rent with hassle-free, fully managed lets.",
+    title: "Guaranteed Rent",
+    body: "Fixed monthly income, paid on time — even during voids. Long-term leases of 3–5 years with full management included.",
+    highlight: true,
   },
   {
     n: "02",
-    title: "BRRR Projects & Flips",
-    body: "Buy, refurbish, refinance, rent — or flip. We source projects designed to maximise return on capital invested.",
+    title: "West London Lettings",
+    body: "2–4 bed homes across HA, UB, TW and W7. Standard ASTs welcome — families, professionals and corporate tenants.",
   },
   {
     n: "03",
-    title: "Company Lets & Corporate Housing",
-    body: "Premium, fully managed homes for companies and travelling professionals across the UK.",
+    title: "BRR & Flip Deal Sourcing",
+    body: "Off-market projects in Manchester, Birmingham and London — fully analysed, packaged and ready for serious investors.",
   },
   {
     n: "04",
-    title: "Landlord & Investor Support",
-    body: "Hands-free management, tailored guidance and clear exit strategies — built around your portfolio goals.",
+    title: "Provider & Corporate Partnerships",
+    body: "Quality stock for housing providers, supported-living operators and companies relocating staff or project teams.",
   },
 ];
 
@@ -34,7 +35,7 @@ const Services = () => {
           </div>
           <div className="md:col-span-6 md:col-start-7 flex items-end">
             <p className="text-muted-foreground text-lg leading-relaxed">
-              From a single rental conversion to a full BRRR pipeline, we package and deliver property opportunities tailored to your strategy.
+              Whatever side of the deal you're on — landlord, tenant, investor or partner — we make property simple.
             </p>
           </div>
         </div>
@@ -43,14 +44,21 @@ const Services = () => {
           {services.map((s) => (
             <div
               key={s.n}
-              className="group bg-background p-10 md:p-12 hover:bg-cream/40 transition-colors duration-500"
+              className={`group p-10 md:p-12 transition-colors duration-500 ${
+                s.highlight
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "bg-background hover:bg-cream/40"
+              }`}
             >
               <div className="flex items-baseline gap-6 mb-6">
-                <span className="font-display text-gold text-2xl">{s.n}</span>
-                <div className="h-px flex-1 bg-border group-hover:bg-primary/30 transition-colors" />
+                <span className={`font-display text-2xl ${s.highlight ? "text-gold" : "text-gold"}`}>{s.n}</span>
+                <div className={`h-px flex-1 transition-colors ${s.highlight ? "bg-cream/20" : "bg-border group-hover:bg-primary/30"}`} />
+                {s.highlight && (
+                  <span className="text-[10px] uppercase tracking-[0.25em] text-gold">Most popular</span>
+                )}
               </div>
               <h3 className="font-display text-2xl md:text-3xl mb-4 leading-tight">{s.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{s.body}</p>
+              <p className={`leading-relaxed ${s.highlight ? "text-cream/75" : "text-muted-foreground"}`}>{s.body}</p>
             </div>
           ))}
         </div>
