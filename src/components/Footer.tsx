@@ -12,9 +12,10 @@ const Footer = () => {
           <div className="md:col-span-3">
             <p className="text-[10px] uppercase tracking-[0.3em] text-cream/50 mb-4">Explore</p>
             <ul className="space-y-2 text-sm">
-              <li><a href="#services" className="hover:text-gold transition-colors">Services</a></li>
-              <li><a href="#properties" className="hover:text-gold transition-colors">Properties</a></li>
-              <li><a href="#about" className="hover:text-gold transition-colors">About</a></li>
+              <li><a href="#landlords" className="hover:text-gold transition-colors">Landlords</a></li>
+              <li><a href="#rentals" className="hover:text-gold transition-colors">Rentals</a></li>
+              <li><a href="#deals" className="hover:text-gold transition-colors">Deals</a></li>
+              <li><a href="#partners" className="hover:text-gold transition-colors">Partners</a></li>
               <li><a href="#contact" className="hover:text-gold transition-colors">Contact</a></li>
             </ul>
           </div>

@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#services", label: "Services" },
-  { href: "#properties", label: "Properties" },
-  { href: "#about", label: "About" },
+  { href: "#landlords", label: "Landlords" },
+  { href: "#rentals", label: "Rentals" },
+  { href: "#deals", label: "Deals" },
+  { href: "#partners", label: "Partners" },
   { href: "#contact", label: "Contact" },
 ];
 
