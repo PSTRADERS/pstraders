@@ -134,15 +134,23 @@ const Rentals = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {rentals.map((p) => (
             <article key={p.title} className="group bg-background overflow-hidden rounded-sm shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-500 flex flex-col">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={p.img}
-                  alt={`${p.title} in ${p.area} ${p.postcode}`}
-                  loading="lazy"
-                  width={1280}
-                  height={896}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s] ease-out"
-                />
+              <div className="relative aspect-[4/3] overflow-hidden bg-primary/95">
+                {p.img ? (
+                  <img
+                    src={p.img}
+                    alt={`${p.title} in ${p.area} ${p.postcode}`}
+                    loading="lazy"
+                    width={1280}
+                    height={896}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s] ease-out"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-cream text-center px-6">
+                    <span className="text-[10px] uppercase tracking-[0.4em] text-gold mb-3">Photoshoot scheduled</span>
+                    <p className="font-display text-2xl italic font-light">Images coming soon</p>
+                    <p className="text-cream/60 text-xs mt-2 uppercase tracking-[0.25em]">{p.postcode} · {p.area}</p>
+                  </div>
+                )}
                 <span className={`absolute top-4 left-4 text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 ${statusStyles[p.status]}`}>
                   {p.status}
                 </span>
