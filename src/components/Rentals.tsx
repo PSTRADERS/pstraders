@@ -84,6 +84,26 @@ const rentals: Rental[] = [
     features: ["Garage + driveway", "Modern finish", "Family friendly"],
     status: "Available",
   },
+  {
+    title: "3-Bed Apartment Above Shop Unit",
+    area: "Hayes",
+    postcode: "UB3",
+    beds: 3,
+    baths: 1,
+    pcm: "£2,000",
+    features: ["Above commercial unit", "Spacious living area", "Excellent transport links"],
+    status: "Available",
+  },
+  {
+    title: "5-Bed Professional HMO",
+    area: "Feltham",
+    postcode: "TW14",
+    beds: 5,
+    baths: 1,
+    pcm: "£3,500",
+    features: ["All bills included potential", "Fully furnished HMO", "Close to Heathrow & rail"],
+    status: "Available",
+  },
 ];
 
 const statusStyles: Record<Rental["status"], string> = {
@@ -100,10 +120,10 @@ const Rentals = () => {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Properties to rent · West London</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              2–4 bed homes across <em className="italic font-light">HA · UB · TW · W7.</em>
+              Quality 2–5 bed homes across <em className="italic font-light">West London.</em>
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">
-              A curated selection of recently refurbished rentals — perfect for families, professionals and corporate tenants. Standard ASTs welcome.
+              A curated selection of professionally managed rentals — perfect for families, professionals, sharers and corporate tenants. Standard ASTs welcome.
             </p>
           </div>
           <a href="#contact" className="text-sm uppercase tracking-[0.2em] border-b border-primary pb-1 hover:gap-3 inline-flex items-center gap-2 transition-all">
