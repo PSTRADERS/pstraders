@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 const links = [
   { href: "#landlords", label: "Landlords" },
   { href: "#rentals", label: "Rentals" },
-  { href: "#deals", label: "Deals" },
-  { href: "#partners", label: "Partners" },
+  { href: "#deals", label: "Investor Deals" },
+  { href: "#partners", label: "Work With Us" },
   { href: "#contact", label: "Contact" },
 ];
 

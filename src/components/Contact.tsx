@@ -31,15 +31,15 @@ const Contact = () => {
           <dl className="space-y-6 text-sm">
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-1">Office</dt>
-              <dd className="font-display text-lg">Manchester, United Kingdom</dd>
+              <dd className="font-display text-lg leading-snug">357a Hanworth Road<br/>Hounslow, TW3 3SQ</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-1">Email</dt>
-              <dd><a href="mailto:hello@pstradersltd.co.uk" className="font-display text-lg hover:text-gold transition-colors">hello@pstradersltd.co.uk</a></dd>
+              <dd><a href="mailto:pstraders.ltd@outlook.com" className="font-display text-lg hover:text-gold transition-colors">pstraders.ltd@outlook.com</a></dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-1">Phone</dt>
-              <dd><a href="tel:+441612000000" className="font-display text-lg hover:text-gold transition-colors">+44 (0)161 200 0000</a></dd>
+              <dd><a href="tel:+447491967777" className="font-display text-lg hover:text-gold transition-colors">07491 967777</a></dd>
             </div>
           </dl>
         </div>
