@@ -6,7 +6,7 @@ import r5 from "@/assets/rental-5.jpg";
 import r6 from "@/assets/rental-6.jpg";
 
 type Rental = {
-  img: string;
+  img?: string;
   title: string;
   area: string;
   postcode: string;
