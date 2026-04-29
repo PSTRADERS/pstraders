@@ -131,10 +131,13 @@ const Rentals = () => {
           </a>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {rentals.map((p) => (
-            <article key={p.title} className="group bg-background overflow-hidden rounded-sm shadow-[var(--shadow-card)] hover:-translate-y-1 transition-all duration-500 flex flex-col">
-              <div className="relative aspect-[4/3] overflow-hidden bg-primary/95">
+            <article
+              key={p.title}
+              className="group bg-background overflow-hidden rounded-sm border border-border/60 hover:border-primary/30 hover:shadow-[var(--shadow-elegant)] hover:-translate-y-1 transition-all duration-500 flex flex-col"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden bg-primary">
                 {p.img ? (
                   <img
                     src={p.img}
@@ -142,45 +145,54 @@ const Rentals = () => {
                     loading="lazy"
                     width={1280}
                     height={896}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s] ease-out"
+                    className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-[1.4s] ease-out"
                   />
                 ) : (
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-cream text-center px-6">
-                    <span className="text-[10px] uppercase tracking-[0.4em] text-gold mb-3">Photoshoot scheduled</span>
-                    <p className="font-display text-2xl italic font-light">Images coming soon</p>
-                    <p className="text-cream/60 text-xs mt-2 uppercase tracking-[0.25em]">{p.postcode} · {p.area}</p>
+                  <div
+                    className="absolute inset-0 flex flex-col items-center justify-center text-cream text-center px-6"
+                    style={{
+                      backgroundImage:
+                        "radial-gradient(circle at 30% 20%, hsl(var(--gold) / 0.15), transparent 60%), radial-gradient(circle at 70% 80%, hsl(var(--cream) / 0.08), transparent 55%)",
+                    }}
+                  >
+                    <span className="text-[10px] uppercase tracking-[0.4em] text-gold mb-3">— Photoshoot scheduled</span>
+                    <p className="font-display text-2xl md:text-3xl italic font-light text-cream">Images coming soon</p>
+                    <p className="text-cream/60 text-[10px] mt-3 uppercase tracking-[0.3em]">{p.postcode} · {p.area}</p>
                   </div>
                 )}
-                <span className={`absolute top-4 left-4 text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 ${statusStyles[p.status]}`}>
+                <span className={`absolute top-4 left-4 text-[10px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full ${statusStyles[p.status]}`}>
                   {p.status}
                 </span>
-                <span className="absolute top-4 right-4 bg-background/90 backdrop-blur text-primary text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 font-medium">
+                <span className="absolute top-4 right-4 bg-background/95 backdrop-blur text-primary text-[10px] uppercase tracking-[0.25em] px-3 py-1.5 rounded-full font-medium">
                   {p.postcode}
                 </span>
               </div>
               <div className="p-7 flex-1 flex flex-col">
-                <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-2">{p.area}, London</p>
-                <h3 className="font-display text-2xl mb-3 leading-tight">{p.title}</h3>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2">{p.area}, London</p>
+                <h3 className="font-display text-xl md:text-2xl mb-3 leading-tight">{p.title}</h3>
+                <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-5">
                   <span>{p.beds} bed</span>
                   <span className="w-1 h-1 rounded-full bg-border" />
                   <span>{p.baths} bath</span>
                 </div>
-                <ul className="space-y-1.5 mb-6 text-sm">
+                <ul className="space-y-2 mb-6 text-sm">
                   {p.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2">
-                      <span className="text-gold mt-1.5 w-1 h-1 rounded-full bg-gold flex-shrink-0" aria-hidden />
-                      <span className="text-foreground/80">{f}</span>
+                    <li key={f} className="flex items-start gap-2.5">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gold flex-shrink-0" aria-hidden />
+                      <span className="text-foreground/75">{f}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-end justify-between pt-5 border-t border-border mt-auto">
+                <div className="flex items-end justify-between pt-5 border-t border-border/60 mt-auto">
                   <div>
-                    <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Per month</p>
-                    <p className="font-display text-2xl">{p.pcm}</p>
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">Per month</p>
+                    <p className="font-display text-3xl leading-none">{p.pcm}</p>
                   </div>
-                  <a href="#contact" className="text-xs uppercase tracking-[0.2em] text-primary hover:text-gold transition-colors">
-                    Enquire →
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-primary hover:text-gold hover:gap-3 transition-all"
+                  >
+                    Enquire <span aria-hidden>→</span>
                   </a>
                 </div>
               </div>
