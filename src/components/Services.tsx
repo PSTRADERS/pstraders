@@ -8,17 +8,17 @@ const services = [
   {
     n: "02",
     title: "West London Lettings",
-    body: "2–4 bed homes across HA, UB, TW and W7. Standard ASTs welcome — families, professionals and corporate tenants.",
+    body: "Professionally refurbished 2–4 bed homes across West London. Standard ASTs welcome — families, professionals and corporate tenants.",
   },
   {
     n: "03",
-    title: "BRR & Flip Deal Sourcing",
-    body: "Off-market projects in Manchester, Birmingham and London — fully analysed, packaged and ready for serious investors.",
+    title: "Investor Deal Sourcing",
+    body: "Off-market BMV and high-ROI projects in Manchester, Birmingham and London — fully analysed, packaged and ready for serious investors.",
   },
   {
     n: "04",
-    title: "Provider & Corporate Partnerships",
-    body: "Quality stock for housing providers, supported-living operators and companies relocating staff or project teams.",
+    title: "Provider & Agency Solutions",
+    body: "Compliant stock for housing providers and supported-living operators — and we help agencies place tenants into hard-to-let properties.",
   },
 ];
 

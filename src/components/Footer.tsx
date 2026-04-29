@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="md:col-span-5">
             <p className="font-display text-3xl">P S Traders <span className="text-gold">Ltd</span></p>
             <p className="text-cream/60 text-sm mt-3 max-w-sm leading-relaxed">
-              UK property sourcing, HMO conversions, BRRR projects and corporate lets — built on relationships.
+              Guaranteed rent, West London lettings, investor deals and provider partnerships — built on trust.
             </p>
           </div>
           <div className="md:col-span-3">
@@ -14,17 +14,17 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="#landlords" className="hover:text-gold transition-colors">Landlords</a></li>
               <li><a href="#rentals" className="hover:text-gold transition-colors">Rentals</a></li>
-              <li><a href="#deals" className="hover:text-gold transition-colors">Deals</a></li>
-              <li><a href="#partners" className="hover:text-gold transition-colors">Partners</a></li>
+              <li><a href="#deals" className="hover:text-gold transition-colors">Investor Deals</a></li>
+              <li><a href="#partners" className="hover:text-gold transition-colors">Work With Us</a></li>
               <li><a href="#contact" className="hover:text-gold transition-colors">Contact</a></li>
             </ul>
           </div>
           <div className="md:col-span-4">
             <p className="text-[10px] uppercase tracking-[0.3em] text-cream/50 mb-4">Connect</p>
             <ul className="space-y-2 text-sm">
-              <li><a href="mailto:hello@pstradersltd.co.uk" className="hover:text-gold transition-colors">hello@pstradersltd.co.uk</a></li>
-              <li><a href="tel:+441612000000" className="hover:text-gold transition-colors">+44 (0)161 200 0000</a></li>
-              <li className="text-cream/60">Manchester, United Kingdom</li>
+              <li><a href="mailto:pstraders.ltd@outlook.com" className="hover:text-gold transition-colors">pstraders.ltd@outlook.com</a></li>
+              <li><a href="tel:+447491967777" className="hover:text-gold transition-colors">07491 967777</a></li>
+              <li className="text-cream/60">357a Hanworth Road,<br/>Hounslow, TW3 3SQ</li>
             </ul>
           </div>
         </div>
