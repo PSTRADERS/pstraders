@@ -8,12 +8,12 @@ const services = [
   {
     n: "02",
     title: "West London Lettings",
-    body: "Professionally refurbished 2–4 bed homes across West London. Standard ASTs welcome — families, professionals and corporate tenants.",
+    body: "Professionally refurbished 2–4 bed homes across West London. Open to providers, families, professionals and corporate tenants — all arrangements welcome.",
   },
   {
     n: "03",
     title: "Investor Deal Sourcing",
-    body: "Off-market BMV and high-ROI projects in Manchester, Birmingham and London — fully analysed, packaged and ready for serious investors.",
+    body: "Off-market BMV and high-ROI projects across the UK — fully analysed, packaged and ready for serious investors.",
   },
   {
     n: "04",

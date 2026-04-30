@@ -22,8 +22,8 @@ const About = () => {
               className="w-full aspect-square object-cover rounded-sm"
             />
             <div className="absolute -bottom-6 -right-6 bg-cream text-primary p-6 hidden md:block">
-              <p className="font-display text-3xl">Est. 2019</p>
-              <p className="text-xs uppercase tracking-[0.25em] mt-1">Manchester, UK</p>
+              <p className="font-display text-3xl">Est. 2023</p>
+              <p className="text-xs uppercase tracking-[0.25em] mt-1">London</p>
             </div>
           </div>
         </div>

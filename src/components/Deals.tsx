@@ -89,10 +89,10 @@ const Deals = () => {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Investor opportunities</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Investor Deals — <em className="italic font-light">BMV & high ROI.</em>
+              Investment Opportunities — <em className="italic font-light">BMV & High ROI.</em>
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">
-              Sourced, analysed and packaged. Each deal comes with full numbers, comparables and a refurb scope — ready to move on.
+              Sourced, analysed and packaged. Each deal comes with full numbers, comparables and a refurb scope — ready to move on. Message us for BMV and high ROI deals.
             </p>
           </div>
           <a href="#contact" className="text-sm uppercase tracking-[0.2em] border-b border-primary pb-1 hover:gap-3 inline-flex items-center gap-2 transition-all">

@@ -9,14 +9,14 @@ const testimonials = [
   {
     quote:
       "P S Traders took over my Hounslow property on a guaranteed rent lease. Rent has landed on time every single month — exactly as promised. Genuinely hassle-free.",
-    name: "Placeholder Landlord",
+    name: "TW3",
     role: "Landlord · TW3",
     initial: "L",
   },
   {
     quote:
       "Professional, responsive and thorough from viewing through to move-in. The property was spotless and any small issues were sorted within a day. Highly recommend.",
-    name: "Placeholder Tenant",
+    name: "UB1",
     role: "Tenant · West London",
     initial: "T",
   },

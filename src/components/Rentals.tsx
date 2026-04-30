@@ -120,10 +120,10 @@ const Rentals = () => {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Properties to rent · West London</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Quality 2–5 bed homes across <em className="italic font-light">West London.</em>
+              Quality homes across <em className="italic font-light">West London</em> — all arrangements welcome.
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">
-              A curated selection of professionally managed rentals — perfect for families, professionals, sharers and corporate tenants. Standard ASTs welcome.
+              A curated selection of professionally managed rentals, open to providers, families, professionals and corporate tenants.
             </p>
           </div>
           <a href="#contact" className="text-sm uppercase tracking-[0.2em] border-b border-primary pb-1 hover:gap-3 inline-flex items-center gap-2 transition-all">
