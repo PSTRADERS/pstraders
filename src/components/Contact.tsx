@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5 mb-10">
+        <div className="grid md:grid-cols-3 gap-5">
           <a
             href="tel:+447491967777"
             className="group bg-background p-8 rounded-sm border border-border/60 hover:border-primary/30 hover:-translate-y-1 transition-all duration-500"
@@ -42,29 +42,6 @@ const Contact = () => {
               357a Hanworth Road<br />
               Hounslow, TW3 3SQ
             </p>
-          </div>
-        </div>
-
-        <div className="bg-primary text-cream p-10 md:p-14 rounded-sm grid md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-8">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-gold mb-3">— Quickest reply</p>
-            <h3 className="font-display text-3xl md:text-4xl leading-tight text-balance">
-              Prefer to message? <em className="italic font-light text-gold">We're on WhatsApp.</em>
-            </h3>
-            <p className="text-cream/70 mt-4 text-sm leading-relaxed max-w-lg">
-              For property enquiries, viewings or a guaranteed rent offer — drop us a quick message and we'll reply the same day.
-            </p>
-          </div>
-          <div className="md:col-span-4 flex md:justify-end">
-            <a
-              href="https://wa.me/447491967777"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-cream text-primary px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] hover:bg-cream/90 hover:gap-5 transition-all"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Chat on WhatsApp
-            </a>
           </div>
         </div>
       </div>

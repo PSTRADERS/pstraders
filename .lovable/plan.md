@@ -1,20 +1,31 @@
-## Add floating WhatsApp button
+## Copy & layout cleanup across the site
 
-Add an always-visible WhatsApp chat button fixed to the bottom-right of every page, linking to `https://wa.me/447491967777`.
+### 1. `src/components/Services.tsx`
+- Lettings card body → "Professionally refurbished 2–4 bed homes across West London. Open to providers, families, professionals and corporate tenants — all arrangements welcome."
+- Investor Deal Sourcing card body → "Off-market BMV and high-ROI projects across the UK — fully analysed, packaged and ready for serious investors."
 
-### Design
+### 2. `src/components/Rentals.tsx` (header block)
+- Heading → "Quality homes across *West London* — all arrangements welcome."
+- Subhead → "A curated selection of professionally managed rentals, open to providers, families, professionals and corporate tenants."
 
-- Round green button (WhatsApp brand green `#25D366`), 56px on desktop, 52px on mobile
-- White WhatsApp icon centered (using `MessageCircle` from lucide-react styled as the WhatsApp glyph, since lucide doesn't ship a brand WhatsApp icon — alternatively inline a small SVG of the official WhatsApp logo for authenticity)
-- Soft drop shadow + subtle pulse/ping ring on idle to draw attention
-- Hover: slight scale-up, shadow deepens
-- Position: `fixed bottom-6 right-6` with `z-50` so it sits above all sections
-- Tooltip on hover: "Chat on WhatsApp"
-- `aria-label="Chat on WhatsApp"`, opens in new tab (`target="_blank"`, `rel="noopener noreferrer"`)
+### 3. `src/components/Deals.tsx` (header block)
+- Heading → "Investment Opportunities — *BMV & High ROI.*"
+- Subhead → "Sourced, analysed and packaged. Each deal comes with full numbers, comparables and a refurb scope — ready to move on. Message us for BMV and high ROI deals."
 
-### Implementation
+### 4. `src/components/About.tsx`
+- "Est. 2019" → "Est. 2023"
+- "Manchester, UK" → "London"
 
-1. Create `src/components/WhatsAppFloat.tsx` — self-contained fixed-position anchor with inline SVG of the official WhatsApp logo (so the icon is recognisably WhatsApp rather than a generic chat bubble).
-2. Mount it once in `src/pages/Index.tsx` after `<Footer />` so it appears on the home page. (If we later add more routes, we can lift it into `App.tsx`.)
+### 5. `src/components/Testimonial.tsx`
+- Landlord name "Placeholder Landlord" → "TW3"
+- Tenant name "Placeholder Tenant" → "UB1"
 
-No other files change. The existing "Chat on WhatsApp" CTA inside the Contact section stays as-is.
+### 6. Remove the entire Landlords section (items 4 + 5 + 6)
+The Landlords component contains both the "Why work with us" benefits column and the "Register a property" form, plus the inline WhatsApp button. The user wants all of it gone (the floating WhatsApp button already covers chat). Action:
+- In `src/pages/Index.tsx`: remove the `import Landlords from "@/components/Landlords"` line and the `<Landlords />` render.
+- Delete `src/components/Landlords.tsx`.
+
+### 7. Remove inline WhatsApp banner from Contact (item 6 follow-through)
+- In `src/components/Contact.tsx`: remove the navy "Prefer to message? We're on WhatsApp." banner block (lines ~48–69) and drop the now-unused `MessageCircle` import. The phone / email / office cards stay. The floating WhatsApp button remains the single chat entry point.
+
+No styling system, design tokens, or other components are touched.
