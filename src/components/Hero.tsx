@@ -31,18 +31,30 @@ const Hero = () => {
           <p className="mt-10 text-cream/75 text-lg md:text-xl max-w-2xl leading-relaxed">
             Guaranteed rent for landlords, quality homes for tenants, compliant stock for providers and reliable solutions for agencies — all from one West London team.
           </p>
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-12 flex flex-wrap gap-3">
             <a
-              href="#landlords"
-              className="inline-flex items-center gap-3 bg-cream text-primary px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] hover:bg-cream/90 transition-all hover:gap-5"
+              href="#contact"
+              className="inline-flex items-center gap-3 bg-gold text-primary px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] hover:bg-gold/90 transition-all hover:gap-5 font-medium"
             >
-              Guaranteed Rent <span aria-hidden>→</span>
+              Book a Consultation <span aria-hidden>→</span>
             </a>
             <a
-              href="#rentals"
+              href="#contact"
+              className="inline-flex items-center gap-3 bg-cream text-primary px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] hover:bg-cream/90 transition-all hover:gap-5"
+            >
+              List Your Property
+            </a>
+            <a
+              href="#deals"
               className="inline-flex items-center gap-3 border border-cream/40 text-cream px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] hover:bg-cream/10 transition-all"
             >
-              View Rentals
+              View Investment Deals
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 text-cream/80 hover:text-cream px-4 py-4 text-xs uppercase tracking-[0.25em] transition-colors underline-offset-4 hover:underline"
+            >
+              Contact Us →
             </a>
           </div>
         </div>
