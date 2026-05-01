@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { KeyRound } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -28,9 +29,12 @@ const Navbar = () => {
       )}
     >
       <div className="container-tight flex items-center justify-between">
-        <a href="#top" className={cn("flex items-baseline gap-2 font-display text-lg tracking-tight transition-colors", scrolled ? "text-foreground" : "text-cream")}>
-          <span className="font-medium">P S Traders</span>
-          <span className={cn("text-xs uppercase tracking-[0.3em]", scrolled ? "text-muted-foreground" : "text-cream/70")}>Ltd</span>
+        <a href="#top" className={cn("group flex items-center gap-2.5 transition-colors", scrolled ? "text-foreground" : "text-cream")}>
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gold/60 bg-gold/10 text-gold">
+            <KeyRound className="w-4 h-4 -rotate-45" strokeWidth={1.75} />
+          </span>
+          <span className="font-display text-lg font-medium tracking-[0.02em] leading-none">P S Traders</span>
+          <span className={cn("text-gold text-[10px] uppercase tracking-[0.35em] leading-none mt-1", !scrolled && "text-gold")}>Ltd</span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (

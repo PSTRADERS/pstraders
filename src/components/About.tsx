@@ -1,8 +1,8 @@
 import about from "@/assets/about.jpg";
 
 const stats = [
-  { n: "120+", l: "Deals sourced" },
-  { n: "£18M", l: "Property transacted" },
+  { n: "75+", l: "Deals sourced" },
+  { n: "£7M", l: "Property transacted" },
   { n: "11.4%", l: "Avg. gross yield" },
   { n: "98%", l: "Client retention" },
 ];

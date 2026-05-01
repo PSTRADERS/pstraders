@@ -50,22 +50,22 @@ const deals: Deal[] = [
     img: p2,
     strategy: "Flip",
     title: "1930s Semi · Cosmetic Flip",
-    location: "Birmingham · B23",
-    purchase: "£185,000",
-    refurb: "£22,000",
-    gdv: "£245,000",
-    roi: "Net £30K",
+    location: "London · N17",
+    purchase: "£325,000",
+    refurb: "£30,000",
+    gdv: "£420,000",
+    roi: "Net £45K",
     status: "Available",
   },
   {
     img: p5,
     strategy: "BRR",
     title: "Apartment Block Conversion",
-    location: "Birmingham · B1",
-    purchase: "£480,000",
-    refurb: "£75,000",
-    gdv: "£720,000",
-    roi: "ROI 26%",
+    location: "London · SW9",
+    purchase: "£620,000",
+    refurb: "£90,000",
+    gdv: "£880,000",
+    roi: "ROI 24%",
     status: "Reserved",
   },
   {
@@ -89,7 +89,7 @@ const Deals = () => {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Investor opportunities</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Investment Opportunities — <em className="italic font-light">BMV & High ROI.</em>
+              Investment <em className="italic font-light">Opportunities.</em>
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">
               Sourced, analysed and packaged. Each deal comes with full numbers, comparables and a refurb scope — ready to move on. Message us for BMV and high ROI deals.

@@ -25,12 +25,15 @@ const Contact = () => {
           </a>
 
           <a
-            href="mailto:pstraders.ltd@outlook.com"
+            href="mailto:info@pstrader.co.uk"
             className="group bg-background p-8 rounded-sm border border-border/60 hover:border-primary/30 hover:-translate-y-1 transition-all duration-500"
           >
             <Mail className="w-6 h-6 text-gold mb-6" strokeWidth={1.5} />
             <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2">Email</p>
             <p className="font-display text-lg leading-snug group-hover:text-gold transition-colors break-all">
+              info@pstrader.co.uk
+            </p>
+            <p className="text-xs text-muted-foreground mt-2 break-all">
               pstraders.ltd@outlook.com
             </p>
           </a>

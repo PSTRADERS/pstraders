@@ -27,7 +27,7 @@ const rentals: Rental[] = [
     baths: 2,
     pcm: "£2,800",
     features: ["Recently refurbished", "Private balcony", "Allocated parking"],
-    status: "Available",
+    status: "Let Agreed",
   },
   {
     img: r2,
@@ -38,7 +38,7 @@ const rentals: Rental[] = [
     baths: 1,
     pcm: "£2,100",
     features: ["South-facing balcony", "Open-plan living", "Concierge"],
-    status: "Available",
+    status: "Let Agreed",
   },
   {
     img: r3,
@@ -60,7 +60,7 @@ const rentals: Rental[] = [
     baths: 2,
     pcm: "£3,200",
     features: ["New kitchen", "Off-street parking", "Close to station"],
-    status: "Coming Soon",
+    status: "Let Agreed",
   },
   {
     img: r5,
@@ -120,7 +120,7 @@ const Rentals = () => {
           <div className="max-w-3xl">
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Properties to rent · West London</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-balance">
-              Quality homes across <em className="italic font-light">West London</em> — all arrangements welcome.
+              Quality homes across <em className="italic font-light">West London.</em>
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">
               A curated selection of professionally managed rentals, open to providers, families, professionals and corporate tenants.
