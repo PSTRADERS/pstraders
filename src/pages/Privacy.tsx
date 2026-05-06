@@ -104,7 +104,7 @@ const Privacy = () => {
             For any privacy-related questions or to exercise your rights, please contact us at:
           </p>
           <ul className="space-y-1.5 mt-2">
-            <li>Email: <a href="mailto:info@pstrader.co.uk" className="text-primary underline-offset-4 hover:underline">info@pstrader.co.uk</a></li>
+            <li>Email: <a href="mailto:info@pstraders.co.uk" className="text-primary underline-offset-4 hover:underline">info@pstraders.co.uk</a></li>
             <li>Phone: <a href="tel:+447491967777" className="text-primary underline-offset-4 hover:underline">07491 967777</a></li>
             <li>Post: P S Traders Ltd, 357a Hanworth Road, Hounslow, TW3 3SQ</li>
           </ul>

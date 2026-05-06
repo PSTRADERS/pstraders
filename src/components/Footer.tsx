@@ -69,7 +69,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <a href="mailto:info@pstrader.co.uk" className="text-cream/85 hover:text-gold transition-colors break-all">info@pstrader.co.uk</a>
+                  <a href="mailto:info@pstraders.co.uk" className="text-cream/85 hover:text-gold transition-colors break-all">info@pstraders.co.uk</a>
                   <a href="mailto:pstraders.ltd@outlook.com" className="text-cream/55 hover:text-gold transition-colors text-xs break-all">pstraders.ltd@outlook.com</a>
                 </div>
               </li>
