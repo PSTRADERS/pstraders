@@ -8,7 +8,7 @@ const services = [
   {
     n: "02",
     title: "West London Lettings",
-    body: "Professionally refurbished 2–4 bed homes across West London. Open to providers, families, professionals and corporate tenants — all arrangements welcome.",
+    body: "Professionally refurbished 2–4 bed homes across West London. Open to providers, families, professionals and corporate tenants.",
   },
   {
     n: "03",
