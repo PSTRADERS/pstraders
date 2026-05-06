@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "How do I register as an investor or list a property?",
-    a: "The fastest way is to message us on WhatsApp using the floating button, call 07491 967777, or email info@pstrader.co.uk. We'll get back to you within one working day.",
+    a: "The fastest way is to message us on WhatsApp using the floating button, call 07491 967777, or email info@pstraders.co.uk. We'll get back to you within one working day.",
   },
 ];
 
